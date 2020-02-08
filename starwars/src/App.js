@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import './App.css';
 import axios from 'axios';
-
+import AllCharacters from './components/allCharacters';
 
 
 const App = () => {
@@ -25,6 +25,7 @@ const App = () => {
   return (
     <div className="App">
       <h1 className="Header">React Wars</h1>
+      <AllCharacters char={char} />
     </div>
   );
 }
