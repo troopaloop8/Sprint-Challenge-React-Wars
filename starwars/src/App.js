@@ -24,7 +24,7 @@ const App = () => {
 
   return (
     <div className="App">
-      <h1 className="Header">React Wars</h1>
+      <h1 className="Header"><img src="https://fontmeme.com/permalink/200208/ef0ad267d64540a084e5c8b3c0ce356d.png" /></h1>
       <AllCharacters char={char} />
     </div>
   );
