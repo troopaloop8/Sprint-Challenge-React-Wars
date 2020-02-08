@@ -7,11 +7,14 @@ import './StarWars.css'
 
 const Character = props => {
     const character = props.char;
+    
+
     return (
         <Col xs="6" md="6" xl="4">
             <Card>
                 <CardBody>
                     <CardTitle><h3>{character.name}</h3></CardTitle>
+                    
                     <CardText>Born: {character.birth_year}</CardText>
                     <CardText>Gender: {character.gender}</CardText>
                     <CardText>Height: {character.height}</CardText>
