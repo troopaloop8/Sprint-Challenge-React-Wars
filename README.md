@@ -26,13 +26,23 @@ Demonstrate your understanding of this Sprint's concepts by answering the follow
 
 - [ ] What is React JS and what problems does it try and solve? Support your answer with concepts introduced in class and from your personal research on the web.
 
+ReactJS is a javascript library introduced by facebook in order to make much faster reactive applications in the browser. It solves a lot of the issues with DOM manipulation, especially with regards to the performance of the DOM and state management. It also makes component creation much more intuitive via the JSX framework, which marries HTML and JS, and is a clear improvement to component creation in vanilla JS.
+
 - [ ] What does it mean to _think_ in react?
+
+It could mean a lot. To me, it means two things primarily, JSX and mass componentization. JSX is the intuitive and easy to read marriage of html and js, allowing you to structure components as if it were html through the use of element tags and nesting. Componentization is the act of seperating each component from others in their own files. Doing this makes reading and understanding all of the moving parts easier because you no longer have to go through a huge js file to find the relevant code, instead you can find the component you need to analyze by basically looking at file names. 
 
 - [ ] Describe state.
 
+State is the data the application stores in memory. To make any meaningful application, it will have to manage state. This could be as simple as an on off switch expressed as a boolean, or how many likes a post on social media has received. It could also be much more complex, such as an accounting application or even a game with characters’ and world state all being managed to make a rich game world. React has many ways to manage state, but the useState hook is a very convenient abstraction that makes it somewhat easy to do so.
+
 - [ ] Describe props.
 
+Props, short for properties, is a way to pass data across components. For example, if you have a scoreboard app, it will contain values pertaining to score, period of play, time left in periods, etc. Say, if you want the component that displays the period of play to change upon the expiration of a timer, the timer component would pass the value to the period of play component, which would then know when the period expired and upon expiry, increment the period of play. In order to use props, a parent component will have to contain some kind of data, whether that is generated via an array or an API, and then you pass it down to a child component when you reference that component in JSX in the parent component. The child component can then access that data when you feed in the props parameter into that child component. They are always stored as objects, so it is important to log the props when they are passed through to know how to navigate and use the data to suit your purposes. 
+
 - [ ] What are side effects, and how do you sync effects in a React component to state or prop changes?
+
+A side effect is anything that affects something outside the scope of the function being executed. For example, a network request that communicates with a third party, which could trigger logs being recorded or data to be saved or updated. They can also change the value of a closure scoped variable. React supplies the useEffect hook which allows for easy syncing of data and props, where you call useEffect and pass in a cb function, and even specify for it to only run when certain data is effected (to avoid unnecessary re-renders or infinite re-renders).
 
 ## Project Set Up
 

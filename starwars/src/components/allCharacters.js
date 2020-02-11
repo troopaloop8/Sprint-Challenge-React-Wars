@@ -16,8 +16,7 @@ const AllCharacters = props => {
             <Row>
                 {props.char.map((char, index) => {
                 return <Character char={char} key={index} />
-                })}
-              
+                })}             
             </Row>
         </Container>
         

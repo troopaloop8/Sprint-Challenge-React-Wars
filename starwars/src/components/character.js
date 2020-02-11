@@ -1,6 +1,6 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import {  Col, Card, CardImg, CardText, CardBody,
+import {  Col, Card, CardText, CardBody,
     CardTitle } from 'reactstrap';
 
 import './StarWars.css'
@@ -13,8 +13,7 @@ const Character = props => {
         <Col xs="6" md="6" xl="4">
             <Card>
                 <CardBody>
-                    <CardTitle><h3>{character.name}</h3></CardTitle>
-                    
+                    <CardTitle><h3>{character.name}</h3></CardTitle>                    
                     <CardText>Born: {character.birth_year}</CardText>
                     <CardText>Gender: {character.gender}</CardText>
                     <CardText>Height: {character.height}</CardText>
